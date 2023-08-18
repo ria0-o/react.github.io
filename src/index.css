@@ -4,7 +4,7 @@
   color: #000000;
 }
 .active{
-  color: blue!important;
+  color: rgb(207, 245, 198)!important;
   font-size: 100px;
 }
 h1 {

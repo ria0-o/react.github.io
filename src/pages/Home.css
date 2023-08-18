@@ -1,41 +1,7 @@
 /* Home.css */
 
-.home-section {
-    padding: 80px 0;
-    background-color: #f8f9fa;
-  }
-  
-  .hero-content {
-    background-color: #343a40;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-column {
-    text-align: center;
-  }
-  
-  .text-column {
-    color: #fff;
-    padding-left: 20px;
-  }
-  
-  .display-5 {
-    margin-bottom: 15px;
-  }
-  
-  .display-6 {
-    color: #ffc107;
-    margin-bottom: 25px;
-  }
-  
-  .cta-group {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  /* Add more styles as needed */
-  
+.social-links-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

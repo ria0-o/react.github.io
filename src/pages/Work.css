@@ -1,36 +1,46 @@
 /* Work.css */
 
-.work-container {
-    background-color: #436da1;
-    padding: 40px;
-  }
-  
-  .display-4 {
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-  }
-  
-  .work-list {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .work-list li {
-    margin-bottom: 1.5rem;
-  }
-  
-  .work-list h4 {
-    font-size: 1.5rem;
-    color: #327fd1;
-    margin-bottom: 0.5rem;
-  }
-  
-  .work-list p {
-    font-size: 1rem;
-    color: #ffffff;
-    line-height: 1.5;
-  }
-  
-  /* Add more styles as needed */
-  
+.work-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.work-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.work-card .card-body {
+  text-align: center;
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.work-card .card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image-container:hover .card-img-top {
+  transform: scale(1.1);
+}
