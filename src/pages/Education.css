@@ -1,0 +1,27 @@
+/* Education.css */
+
+.education-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .education-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .education-card .card-body {
+    text-align: center;
+  }
+  
+  /* Add more styles as needed */
+  
