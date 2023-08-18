@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Row, Col, Container, Button } from 'react-bootstrap';
+import { Image, Row, Col, Container } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 import SocialLinks from '../components/SocialLinks';
 
@@ -8,8 +8,8 @@ const Home = () => {
     <section className="home-section">
       <AnimatePresence>
         <Container className="hero">
-          <Row className="hero d-flex justify-content-center align-items-center">
-            <Col className="d-flex justify-content-center items-center">
+          <Row className="hero d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <Col className="d-flex justify-content-center items-center mb-4 mb-md-0">
               <Image
                 src='/IMG_20230426_153952_087.jpg'
                 width={400}
@@ -48,9 +48,6 @@ const Home = () => {
               <div className="social-links-container">
                 <SocialLinks />
               </div>
-              <Button as="a" href="/work" variant="primary" className="mt-3">
-                View My Work
-              </Button>
             </Col>
           </Row>
         </Container>
@@ -60,4 +57,3 @@ const Home = () => {
 };
 
 export default Home;
-
