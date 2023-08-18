@@ -25,9 +25,9 @@ const Work = () => {
     <section className="work-section">
       <Container>
         <h2 className="section-title">My Works</h2>
-        <Row>
+        <Row xs={1} sm={2} md={3} className="g-4">
           {works.map((work, index) => (
-            <Col key={index} md={4}>
+            <Col key={index}>
               <Card className="work-card">
                 <div className="image-container">
                   <Card.Img variant="top" src={work.image} alt={work.title} />

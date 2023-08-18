@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import './Education.css'; // Import the CSS file
 
 const Education = () => {
@@ -12,13 +13,13 @@ const Education = () => {
       location: 'Baruan, Agno, Pangasinan, Philippines',
     },
     {
-      school: 'Baguio City Nationsl High School',
+      school: 'Baguio City National High School',
       year: '2019',
       degree: 'High School Diploma',
       location: 'Baguio City, Philippines',
     },
     {
-      school: 'PHINMA Universirty of Pangasinan',
+      school: 'PHINMA University of Pangasinan',
       year: '2021',
       degree: 'Senior High School Diploma',
       location: 'Dagupan City, Philippines',
@@ -29,18 +30,31 @@ const Education = () => {
   return (
     <section className="education-section">
       <Container>
-        <h2 className="section-title">Education</h2>
-        <Row>
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="section-title"
+        >
+          Education
+        </motion.h2>
+        <Row xs={1} md={2} className="g-4">
           {educationData.map((edu, index) => (
-            <Col key={index} md={4} sm={6}>
-              <Card className="education-card">
-                <Card.Body>
-                  <Card.Title>{edu.school}</Card.Title>
-                  <Card.Text>{edu.year}</Card.Text>
-                  <Card.Subtitle className="mb-2 text-muted">{edu.degree}</Card.Subtitle>
-                  <Card.Text>{edu.location}</Card.Text>
-                </Card.Body>
-              </Card>
+            <Col key={index}>
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 * index, duration: 1 }}
+              >
+                <Card className="education-card">
+                  <Card.Body>
+                    <Card.Title>{edu.school}</Card.Title>
+                    <Card.Text>{edu.year}</Card.Text>
+                    <Card.Subtitle className="mb-2 text-muted">{edu.degree}</Card.Subtitle>
+                    <Card.Text>{edu.location}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </Col>
           ))}
         </Row>
