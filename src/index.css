@@ -1,6 +1,6 @@
 .App{
-  background: rgb(167, 252, 130);
-  background: radial-gradient(circle, rgb(143, 133, 133) 0%, rgb(155, 245, 119) 100%);
+  background: rgb(165, 223, 140);
+  background: radial-gradient(circle, rgb(246, 246, 246) 0%, rgb(155, 245, 119) 100%);
   color: #000000;
 }
 .active{
