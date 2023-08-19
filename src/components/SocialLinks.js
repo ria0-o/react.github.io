@@ -1,9 +1,10 @@
-import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import React from 'react';
+import { FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import Nav from 'react-bootstrap/Nav';
 
-const SocialLinks = ()=> {
-  return(
-    <div className="d-flex gap-2 p-2 fs-3">
+const SocialLinks = () => {
+  return (
+    <div className="social-links d-flex gap-2 p-2 fs-3">
       <Nav.Link href="https://github.com/ria0-o">
         <FaGithub />
       </Nav.Link>

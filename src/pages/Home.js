@@ -8,8 +8,8 @@ const Home = () => {
     <section className="home-section">
       <AnimatePresence>
         <Container className="hero">
-          <Row className="hero d-flex flex-column flex-md-row justify-content-center align-items-center">
-            <Col className="d-flex justify-content-center items-center mb-4 mb-md-0">
+          <Row className="hero d-md-flex flex-md-row justify-content-center align-items-center">
+            <Col md={4} className="d-flex justify-content-center items-center mb-4 mb-md-0">
               <Image
                 src='/IMG_20230426_153952_087.jpg'
                 width={400}
@@ -19,12 +19,13 @@ const Home = () => {
                 fluid
               />
             </Col>
-            <Col className="d-flex flex-column align-items-center">
+            <Col md={8} className="d-flex flex-column align-items-center">
               <motion.h1
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 className="display-4 fw-bold"
+                style={{ fontSize: 'clamp(2rem, 8vw, 4rem)' }}
               >
                 ADRIAN SIGNO
               </motion.h1>
@@ -36,15 +37,9 @@ const Home = () => {
               >
                 Web Developer
               </motion.h3>
-              <motion.p
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="intro-paragraph"
-              >
-                Welcome to my portfolio! I'm passionate about crafting exceptional web experiences that blend
-                creativity and technology.
-              </motion.p>
+              <div className="intro-paragraph">
+                Welcome to my portfolio! I'm passionate about crafting exceptional web experiences that blend creativity and technology.
+              </div>
               <div className="social-links-container">
                 <SocialLinks />
               </div>

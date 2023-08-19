@@ -92,6 +92,14 @@ h1 {
 }
 
 
+/* Default font size for the social icons */
+.social-icons {
+  font-size: 2rem;
+}
+
+
+
+
 @media (max-width: 991px) {
   .main-timeline-5 {
     max-width: 100%;
